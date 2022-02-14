@@ -25,29 +25,6 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//   let licenseLink = "";
-//   switch (license) {
-//     case "MIT":
-//       licenseLink = "https://opensource.org/licenses/MIT"
-//       return licenseLink;
-//     case "The Unlicense":
-//       licenseLink = "https://unlicense.org/"
-//       return licenseLink;
-//     case "Mozilla":
-//       licenseLink = "https://opensource.org/licenses/MPL-2.0"
-//       return licenseLink;
-//     case "Eclipse":
-//       licenseLink = "https://opensource.org/licenses/EPL-2.0"
-//       return licenseLink;
-//     case "GPL":
-//       licenseLink = "https://opensource.org/licenses/gpl-license"
-//       return licenseLink;
-//   }
-// }
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -121,15 +98,19 @@ function renderLicenseSection(license) {
   }
 }
 
-  // TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {
-    return `# 09 - NodeJS: ${data.title}⚙️
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  const {
+    title, license, description, installation,
+    usage, contribution, test, email, github } = data;
 
-          ${renderLicenseBadge(data.license)}
+  return `# 09 - NodeJS: ${title}⚙️
+
+          ${renderLicenseBadge(license)}
 
           ## Description
 
-          ${data.description}
+          ${description}
 
           ## Table of Contents
 
@@ -143,28 +124,28 @@ function renderLicenseSection(license) {
 
           ## Installation
 
-          ${data.installation}
+          ${installation}
 
           ## Usage
 
-          ${data.usage}
+          ${usage}
 
           ## Contribution
 
-          ${data.contribution}
+          ${contribution}
 
           ## License
 
-          ${renderLicenseSection(data.license)}
+          ${renderLicenseSection(license)}
 
           ## Tests
 
-          ${data.test}
+          ${test}
 
           ## Questions
-          If you have any questions, please contact me via [Email](mailto:${data.email}) or [GitHub](${data.github}).
+          If you have any questions, please contact me via [Email](mailto:${email}) or [GitHub](${github}).
 
           `;
-  }
+}
 
-  module.exports = generateMarkdown;
+module.exports = generateMarkdown;
