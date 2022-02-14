@@ -22,6 +22,7 @@ To use this app, type node .\index.js in the terminal
 
 ![README Generator GIF](https://user-images.githubusercontent.com/93589073/153795747-fdd4441c-c2cf-4517-9f50-7609111e6991.gif)
 ![README generator](https://user-images.githubusercontent.com/93589073/153795752-3d4517b3-5ca8-435a-9c45-725b1bf5592e.PNG)
+[Video link here](https://user-images.githubusercontent.com/93589073/153796387-3622123f-a865-44dc-9bb7-44fbae71ee0a.mp4)
 
 ## Contribution
 Please feel free to contribute in any way by forking the repo and creating a pull request
