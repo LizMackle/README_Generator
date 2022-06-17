@@ -15,10 +15,16 @@ JavaScript app is generated using NodeJS based on user inputs
 *  [Questions](#questions)
 
 ## Installation
-Run “npm install inquirer” in the terminal after cloning Github repository
+Clone the Github repository:<br>
+`https://github.com/LizMackle/README_Generator.git`
+
+Install all dependencies required for application:<br>
+`npm install inquirer` from the root directory.
 
 ## Usage
-To use this app, type node .\index.js in the terminal 
+To use this app, use the following command in the terminal:
+
+`node .\index.js`
 
 ![README Generator GIF](https://user-images.githubusercontent.com/93589073/153795747-fdd4441c-c2cf-4517-9f50-7609111e6991.gif)
 ![README generator](https://user-images.githubusercontent.com/93589073/153795752-3d4517b3-5ca8-435a-9c45-725b1bf5592e.PNG)
